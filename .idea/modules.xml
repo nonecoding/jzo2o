@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/20241027.iml" filepath="$PROJECT_DIR$/.idea/20241027.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jzo2o-framework/jzo2o-canal-sync/jzo2o-canal-sync.iml" filepath="$PROJECT_DIR$/jzo2o-framework/jzo2o-canal-sync/jzo2o-canal-sync.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jzo2o-framework/jzo2o-es/jzo2o-es.iml" filepath="$PROJECT_DIR$/jzo2o-framework/jzo2o-es/jzo2o-es.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jzo2o-framework/jzo2o-knife4j-web/jzo2o-knife4j-web.iml" filepath="$PROJECT_DIR$/jzo2o-framework/jzo2o-knife4j-web/jzo2o-knife4j-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jzo2o-framework/jzo2o-mvc/jzo2o-mvc.iml" filepath="$PROJECT_DIR$/jzo2o-framework/jzo2o-mvc/jzo2o-mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jzo2o-framework/jzo2o-mysql/jzo2o-mysql.iml" filepath="$PROJECT_DIR$/jzo2o-framework/jzo2o-mysql/jzo2o-mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jzo2o-framework/jzo2o-rabbitmq/jzo2o-rabbitmq.iml" filepath="$PROJECT_DIR$/jzo2o-framework/jzo2o-rabbitmq/jzo2o-rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jzo2o-framework/jzo2o-redis/jzo2o-redis.iml" filepath="$PROJECT_DIR$/jzo2o-framework/jzo2o-redis/jzo2o-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jzo2o-framework/jzo2o-seata/jzo2o-seata.iml" filepath="$PROJECT_DIR$/jzo2o-framework/jzo2o-seata/jzo2o-seata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jzo2o-framework/jzo2o-statemachine/jzo2o-statemachine.iml" filepath="$PROJECT_DIR$/jzo2o-framework/jzo2o-statemachine/jzo2o-statemachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jzo2o-framework/jzo2o-thirdparty/jzo2o-thirdparty.iml" filepath="$PROJECT_DIR$/jzo2o-framework/jzo2o-thirdparty/jzo2o-thirdparty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jzo2o-framework/jzo2o-xxl-job/jzo2o-xxl-job.iml" filepath="$PROJECT_DIR$/jzo2o-framework/jzo2o-xxl-job/jzo2o-xxl-job.iml" />
+    </modules>
+  </component>
+</project>
