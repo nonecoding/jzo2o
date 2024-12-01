@@ -1,21 +1,26 @@
 package com.jzo2o.customer.service.impl;
 
-import com.jzo2o.common.constants.UserType;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.jzo2o.common.enums.EnableStatusEnum;
 import com.jzo2o.common.expcetions.DBException;
-import com.jzo2o.common.utils.*;
-import com.jzo2o.customer.model.domain.*;
+import com.jzo2o.common.utils.BeanUtils;
+import com.jzo2o.common.utils.CollUtils;
+import com.jzo2o.common.utils.NumberUtils;
+import com.jzo2o.common.utils.ObjectUtils;
 import com.jzo2o.customer.mapper.ServeProviderSettingsMapper;
+import com.jzo2o.customer.model.domain.ServeProvider;
+import com.jzo2o.customer.model.domain.ServeProviderSettings;
+import com.jzo2o.customer.model.domain.ServeProviderSync;
 import com.jzo2o.customer.model.dto.request.ServePickUpReqDTO;
 import com.jzo2o.customer.model.dto.request.ServeScopeSetReqDTO;
 import com.jzo2o.customer.model.dto.response.CertificationStatusDTO;
 import com.jzo2o.customer.model.dto.response.ServeProviderSettingsGetResDTO;
 import com.jzo2o.customer.model.dto.response.ServeSettingsStatusResDTO;
-import com.jzo2o.customer.service.*;
+import com.jzo2o.customer.service.IServeProviderService;
+import com.jzo2o.customer.service.IServeProviderSettingsService;
+import com.jzo2o.customer.service.IServeProviderSyncService;
 import com.jzo2o.mvc.utils.UserContext;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;

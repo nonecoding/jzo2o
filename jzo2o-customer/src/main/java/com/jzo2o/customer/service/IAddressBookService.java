@@ -2,6 +2,7 @@ package com.jzo2o.customer.service;
 
 import com.jzo2o.customer.model.domain.AddressBook;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.jzo2o.customer.model.dto.request.AddressBookUpsertReqDTO;
 
 /**
  * <p>
@@ -13,4 +14,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IAddressBookService extends IService<AddressBook> {
 
+    void add(AddressBookUpsertReqDTO addressBookUpsertReqDTO);
+
+    void delete(Integer id);
+
+    void setDefault(Integer id);
 }

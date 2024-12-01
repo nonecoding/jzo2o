@@ -1,5 +1,6 @@
 package com.jzo2o.customer.controller.consumer;
 
+import com.jzo2o.customer.model.domain.AddressBook;
 import com.jzo2o.customer.model.dto.request.AddressBookUpsertReqDTO;
 import com.jzo2o.customer.service.IAddressBookService;
 import io.swagger.annotations.Api;
@@ -9,6 +10,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 
 /**
  * 地址簿相关接口
@@ -36,7 +38,7 @@ public class AddressController {
     @ApiOperation("地址薄分页查询接口")
 
     public void page() {
-        addressBookService.page();
+
     }
 
 
@@ -45,8 +47,8 @@ public class AddressController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "id", value = "地址簿id", required = true, dataTypeClass = String.class)
     })
-    public void getById(@PathVariable Integer id) {
-        addressBookService.getById(id);
+    public AddressBook getById(@PathVariable Integer id) {
+       return addressBookService.getById(id);
     }
 
 
@@ -55,8 +57,9 @@ public class AddressController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "id", value = "地址簿id", required = true, dataTypeClass = String.class)
     })
-    public void update(@PathVariable Integer id) {
-        addressBookService.update(id);
+    public void update(@RequestBody AddressBookUpsertReqDTO addressBookUpsertReqDTO) {
+
+
     }
 
 
@@ -69,6 +72,18 @@ public class AddressController {
         addressBookService.delete(id);
     }
 
+    @DeleteMapping("/{ids}")
+    @ApiOperation("地址簿批量删除")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "ids", value = "地址簿ids", required = true, dataTypeClass = String.class)
+    })
+    public void deleteBatch(@RequestBody ArrayList<String> ids) {
+        for (String id : ids) {
+
+            addressBookService.delete(Integer.valueOf(id));
+        }
+
+    }
 
     @PutMapping("/default")
     @ApiOperation("设置/取消默认地址")
