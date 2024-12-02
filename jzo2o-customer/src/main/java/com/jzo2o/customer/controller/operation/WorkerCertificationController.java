@@ -28,4 +28,18 @@ public class WorkerCertificationController {
     public WorkerCertificationResDTO queryById(@PathVariable("id") Long id) {
         return BeanUtil.toBean(workerCertificationService.getById(id), WorkerCertificationResDTO.class);
     }
+
+    @GetMapping("/page")
+    @ApiOperation("审核服务人员认证分页查询")
+    public WorkerCertificationResDTO page(@PathVariable("id") Long id) {
+        return BeanUtil.toBean(workerCertificationService.getById(id), WorkerCertificationResDTO.class);
+    }
+
+    @GetMapping("/audit/{id}")
+    @ApiOperation("审核服务人员认证信息")
+    public WorkerCertificationResDTO auditId(@PathVariable("id") Long id) {
+        return BeanUtil.toBean(workerCertificationService.getById(id), WorkerCertificationResDTO.class);
+    }
+
+
 }

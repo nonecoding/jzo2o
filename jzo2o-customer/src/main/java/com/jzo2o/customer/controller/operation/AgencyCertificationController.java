@@ -28,4 +28,18 @@ public class AgencyCertificationController {
     public AgencyCertificationResDTO queryById(@PathVariable("id") Long id) {
         return BeanUtil.toBean(agencyCertificationService.getById(id), AgencyCertificationResDTO.class);
     }
+
+    @GetMapping("/page")
+    @ApiOperation("根据机构id查询认证信息")
+    public AgencyCertificationResDTO page(@PathVariable("id") Long id) {
+        return BeanUtil.toBean(agencyCertificationService.getById(id), AgencyCertificationResDTO.class);
+    }
+
+    @GetMapping("/audit/{id}")
+    @ApiOperation("根据机构id查询认证信息")
+    public AgencyCertificationResDTO auditId(@PathVariable("id") Long id) {
+        return BeanUtil.toBean(agencyCertificationService.getById(id), AgencyCertificationResDTO.class);
+    }
+
+
 }
